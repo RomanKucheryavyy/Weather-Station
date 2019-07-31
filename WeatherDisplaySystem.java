@@ -23,18 +23,30 @@ public class WeatherDisplaySystem extends WeatherSystem {
 	}
 
 	public void diplayWind() {
-		System.out.println(wind);
+		//System.out.println(wind);
+		WindSpeedSensorSystem windSpeed = new WindSpeedSensorSystem();
+		windSpeed.displayOutsideWind();
 	}
 	
 	public void displayRain() {
-		System.out.println(rain);
+		RainfallSensorSystem system = new RainfallSensorSystem();
 	}
 	
 	public void displayTime() {
-		System.out.println(time);
+		TimeSensorSystem timeSystem = new TimeSensorSystem();
+		timeSystem.displayTime();
+	}
+	
+	public void displayTemperature() {
+		TemperatureSensorSystem system = new TemperatureSensorSystem();
 	}
 	
 	public void displayWeatherStatistics(){
 		System.out.println(temp + rain + time + wind);
+	}
+	
+	public void displaySettings() {
+		SettingsSystem settingSystem = new SettingsSystem();
+		
 	}
 }

@@ -14,11 +14,11 @@ public class RainfallSensorSystem {
 	}
 
 	public void displayOutsideWeather() {
-		System.out.println(" The Weather is: " + displayWeather());
+		System.out.println( displayWeather());
 	}
 	
 	public String displayWeather() {
-		return "displayed";
+		return rain + " inches of rain in the last day";
 	}
 	
 	public double getRainAmount() {

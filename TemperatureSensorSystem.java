@@ -12,7 +12,7 @@ public class TemperatureSensorSystem extends WeatherSystem {
 	public String location = "Seattle";
 
 	public TemperatureSensorSystem() {
-		System.out.println("For Location: " + location + "the Temperature is " + getTemp() + "degrees Farenheit");
+		System.out.println("For Location: " + location + " the Temperature is " + getTemp() + " degrees Farenheit");
 	}
 	
 	public void displayTemp() {
